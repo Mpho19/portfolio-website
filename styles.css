@@ -49,7 +49,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(https://github.com/Mpho19/portfolio-website/blob/main/assets/images/website%20background%20picture%20one.jpg');
+    background: url('https://raw.githubusercontent.com/Mpho19/portfolio-website/main/assets/images/website%20background%20picture%20one.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -303,21 +303,38 @@ h2 {
 
 .about, .projects {
     padding: 100px 50px;
-    background: url('C:/Users/mpho.montshusi/Downloads/NEUMORPHIC_CIRCLES_BACKGROUND.jpg');
+    background: url('https://raw.githubusercontent.com/Mpho19/portfolio-website/main/assets/images/website%20background%20picture%20one.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     position: relative;
 }
 
-/* Remove this duplicate section */
-/* .projects {
-    background: url('C:/Users/mpho.montshusi/OneDrive - Bluespec Holdings/Pictures/Screenshots/Marven project 1.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-} */
+/* Remove duplicate .projects background */
+
+.project-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+}
+
+/* Keep only one version of project-card styles */
+.project-info {
+    padding: 20px;
+}
+
+.project-features {
+    list-style: none;
+    padding: 0 20px 20px;
+}
+
+.project-features li {
+    color: #333;
+    margin: 8px 0;
+}
 
 .projects::before {
     content: '';
